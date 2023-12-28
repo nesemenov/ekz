@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #E6E4BF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ekz.MainController">
+   <children>
+      <TableView fx:id="tableView" editable="true" layoutX="12.0" layoutY="67.0" prefHeight="325.0" prefWidth="677.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="86.0" text="Id" />
+          <TableColumn fx:id="tableColumnLogin" minWidth="0.0" prefWidth="126.0" text="Login" />
+            <TableColumn fx:id="tableColumnPassword" prefWidth="160.0" text="Password" />
+            <TableColumn fx:id="tableColumnRole" prefWidth="153.0" text="Role" />
+            <TableColumn fx:id="tableColumnStatus" prefWidth="161.0" text="Status" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fx:id="updateImage" fitHeight="39.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/update-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="backImage" fitHeight="36.0" fitWidth="36.0" layoutX="650.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/arrow-right.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="240.0" layoutY="18.0" text="Список пользователей" textFill="#6a6100">
+         <font>
+            <Font name="Comic Sans MS Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
